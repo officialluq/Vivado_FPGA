@@ -1,0 +1,4 @@
+Running: xsim.dir/cordic_beh_fixedpoint_behav/xsimk.exe -simmode gui -wdb cordic_beh_fixedpoint_behav.wdb -simrunnum 0 -socket 54236
+Design successfully loaded
+Design Loading Memory Usage: 7820 KB (Peak: 7820 KB)
+Design Loading CPU Usage: 0 ms
