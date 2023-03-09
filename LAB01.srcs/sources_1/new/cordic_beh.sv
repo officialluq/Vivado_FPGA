@@ -28,10 +28,10 @@ real t_angle = 1.0; //Input parameter. The angle
 //Table of arctan (1/2^i)
 // Note. Table initialization below is not correct for Verilog. Select System-Verilog mode
 // in your simulator in the case of syntax errors
-real arctan[0:10] = { 0.785398163, 0.463647609, 0.244978663, 0.124354995, 0.06241881,
+real arctan[0:12] = { 0.785398163, 0.463647609, 0.244978663, 0.124354995, 0.06241881,
  0.031239833, 0.015623729, 0.007812341, 0.00390623, 0.001953123,
- 0.000976562 };
-real Kn = 0.607253; //Cordic scaling factor for 10 iterations
+ 0.000976562, 0.00048828121, 0.00024414062};
+real Kn = 0.60725290951; //Cordic scaling factor for 10 iterations
 //Variables
 real cos = 1.0; //Initial vector x coordinate
 real sin = 0.0; //and y coordinate
@@ -40,7 +40,7 @@ integer i, d;
 real tmp;
 initial //Execute only once
 begin
- for ( i = 0; i < 11; i = i + 1) //Ten algorithm iterations
+ for ( i = 0; i < 13; i = i + 1) //Ten algorithm iterations
  begin
  if( t_angle > angle )
  begin

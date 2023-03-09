@@ -2,3 +2,6 @@ Running: xsim.dir/cordic_beh_fixedpoint_behav/xsimk.exe -simmode gui -wdb cordic
 Design successfully loaded
 Design Loading Memory Usage: 7820 KB (Peak: 7820 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8456 KB (Peak: 8456 KB)
+Simulation CPU Usage: 31 ms

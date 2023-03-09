@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Luki-ENGINEER 
 // 
 // Create Date: 06.03.2023 20:03:32
 // Design Name: 
@@ -35,12 +35,12 @@ integer i, d;
 real tmp;
 initial //Execute only once
 begin
- for ( i = 0; i < 16; i = i + 1) //Ten algorithm iterations
+ for ( i = 0; i < 11; i = i + 1) //Ten algorithm iterations
      begin
         if( t_angle > angle )
          begin
             angle = angle + atan[i];
-            tmp = cos - ( sin >>>i );
+            tmp = cos - ( sin >>> i );
             sin = ( cos  >>>i ) + sin;
             cos = tmp;
         end
